@@ -25,7 +25,7 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Coki</td>
+                        <td>Atiqah Hasiholan</td>
                         <td>01-05-2019 09:30-10:15</td>
                         <td>
                             <h6><span class="badge badge-danger">Pending</span></h6>
