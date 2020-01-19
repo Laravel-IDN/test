@@ -57,21 +57,21 @@
                         <hr>
                         <div class="form-group">
                             <label>Cari WBP</label>
-                            <select class="form-control">
+                            <select class="form-control" disabled>
                                 <option>- Select Option -</option>
                                 <option>1001 - Ego</option>
-                                <option>1002 - Rini</option>
-                                <option>1002 - Tini </option>
+                                <option selected>1002 - Rini</option>
+                                <option disabled>1002 - Tini </option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Status: -</label>
+                            <label>Status: <label class="badge badge-success">Available</label></label>
                         </div>
                         <div class="form-group">
                             <label>Hubungan dengan WBP</label>
-                            <select class="form-control">
+                            <select class="form-control" disabled>
                                 <option>- Select Option -</option>
-                                <option>Keluarga Inti</option>
+                                <option selected>Keluarga Inti</option>
                                 <option>Teman / Kerabat</option>
                                 <option>Pengacara</option>
                                 <option>Lainnya</option>
@@ -84,72 +84,64 @@
                         <div class="row">
                             <div class="col">
                                 <label>NIK KTP</label>
-                                <input type="number" class="form-control" placeholder="NIK KTP">
+                                <input type="number" class="form-control" placeholder="NIK KTP" disabled>
                             </div>
                             <div class="col">
                                 <label>Nama</label>
-                                <input type="text" class="form-control" placeholder="Nama">
+                                <input type="text" class="form-control" placeholder="Nama" disabled>
                             </div>
                             <div class="col">
                                 <label>Jenis Kelamin</label>
-                                <select class="form-control">
+                                <select class="form-control" disabled>
                                     <option>- Select Option -</option>
-                                    <option>Laki - Laki</option>
+                                    <option selected>Laki - Laki</option>
                                     <option>Perempuan</option>
                                 </select>
-                            </div>
-
-                            <div class="col-1">
-                                <label> </label>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col">
                                 <label>Tempat Lahir</label>
-                                <input type="number" class="form-control" placeholder="NIK KTP">
+                                <input type="number" class="form-control" placeholder="tempat lahir" disabled>
                             </div>
                             <div class="col">
                                 <label>Tanggal Lahir</label>
-                                <input type="number" class="form-control" placeholder="NIK KTP">
+                                <input type="number" class="form-control" placeholder="tanggal lahir" disabled>
                             </div>
                             <div class="col">
                                 <label>Agama</label>
-                                <input type="number" class="form-control" placeholder="NIK KTP">
+                                <input type="number" class="form-control" placeholder="agama" disabled>
                             </div>
-                            <div class="col-1"></div>
                         </div>
                         <div class="row mt-3">
                             <div class="col">
                                 <label>Alamat Lengkap</label>
-                                <input type="number" class="form-control" placeholder="NIK KTP">
+                                <input type="number" class="form-control" placeholder="alamat" disabled>
                             </div>
                             <div class="col">
                                 <label>No Telp</label>
-                                <input type="number" class="form-control" placeholder="NIK KTP">
+                                <input type="number" class="form-control" placeholder="no telp" disabled>
                             </div>
                             <div class="col">
                                 <label>Email</label>
-                                <input type="number" class="form-control" placeholder="NIK KTP">
+                                <input type="number" class="form-control" placeholder="email" disabled>
                             </div>
-                            <div class="col-1"></div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col">
+                            <div class="col-md-4">
                                 <label>Foto</label>
-                                <input type="file" class="form-control" placeholder="NIK KTP">
+                                <img src="{{ asset('images/icon_user.png') }}" alt="..." class="img-thumbnail">
                             </div>
-                            <div class="col">
+                            <div class="col-md-4">
                                 <label>Hubungan dengan WBP</label>
-                                <select class="form-control">
+                                <select class="form-control" disabled>
                                     <option>- Select Option -</option>
-                                    <option>Keluarga Inti</option>
+                                    <option selected>Keluarga Inti</option>
                                     <option>Teman / Kerabat</option>
                                     <option>Pengacara</option>
                                     <option>Lainnya</option>
                                 </select>
                             </div>
-                            <div class="col"></div>
-                            <div class="col-1"></div>
                         </div>
 
                         <hr>
@@ -158,9 +150,9 @@
                         <div class="row">
                             <div class="col">
                                 <label>Jenis Barang</label>
-                                <select class="form-control">
+                                <select class="form-control" disabled>
                                     <option>- Select Option -</option>
-                                    <option>Makanan</option>
+                                    <option selected>Makanan</option>
                                     <option>Uang</option>
                                     <option>Pakaian</option>
                                     <option>Obat - Obatan</option>
@@ -169,14 +161,32 @@
                             </div>
                             <div class="col">
                                 <label>Nama Barang</label>
-                                <input type="text" class="form-control" placeholder="Nama Barang">
+                                <input type="text" class="form-control" placeholder="nama barang" value="Nasi Padang" disabled>
                             </div>
                             <div class="col">
                                 <label>Total</label>
-                                <input type="number" class="form-control" placeholder="Nama Barang">
+                                <input type="number" class="form-control" placeholder="total" value="1" disabled>
                             </div>
-                            <div class="col-1">
-                                <label> </label>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Jenis Barang</label>
+                                <select class="form-control" disabled>
+                                    <option>- Select Option -</option>
+                                    <option>Makanan</option>
+                                    <option selected>Uang</option>
+                                    <option>Pakaian</option>
+                                    <option>Obat - Obatan</option>
+                                    <option>Keperluan Lain</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label>Nama Barang</label>
+                                <input type="text" class="form-control" placeholder="nama barang" value="Uang" disabled>
+                            </div>
+                            <div class="col">
+                                <label>Total</label>
+                                <input type="number" class="form-control" placeholder="total" value="500.000" disabled>
                             </div>
                         </div>
                     </form>
