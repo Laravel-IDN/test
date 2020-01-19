@@ -60,8 +60,9 @@ Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
     Route::get('jadwal/create', 'JadwalController@create')->name('jadwal.create');
     Route::post('jadwal/create', 'JadwalController@store');
 
-    // Pengunjung
+    // Kunjungan
     Route::get('kunjungan', 'KunjunganController@index_admin')->name('kunjungan.admin');
+    Route::get('kunjungan/wnp', 'KunjunganController@index_admin_blok')->name('kunjungan.admin.blok');
 
     // Laporan
     Route::get('laporan', 'DashboardController@laporan')->name('dashboard.laporan');

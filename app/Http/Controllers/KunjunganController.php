@@ -93,4 +93,8 @@ class KunjunganController extends Controller
     public function index_admin(){
         return view('kunjungan.admin');
     }
+
+    public function index_admin_blok(){
+        return view('kunjungan.admin_blok');
+    }
 }
