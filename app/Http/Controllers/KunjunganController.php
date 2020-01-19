@@ -89,4 +89,8 @@ class KunjunganController extends Controller
     public function antrian(){
         return view('kunjungan.antrian');
     }
+
+    public function index_admin(){
+        return view('kunjungan.admin');
+    }
 }

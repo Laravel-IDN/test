@@ -22,4 +22,7 @@ class DashboardController extends Controller
         return view('admin.pages.dashboard.tamping');
     }
 
+    public function laporan(){
+        return view('admin.pages.dashboard.laporan');
+    }
 }

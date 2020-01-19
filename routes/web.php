@@ -23,14 +23,14 @@ Route::get('/kunjungan/create', 'KunjunganController@create')->name('kunjungan.c
 Route::post('/kunjungan/create', 'KunjunganController@store');
 Route::get('/kunjungan/detail/{id}', 'KunjunganController@show')->name('kunjungan.detail');
 
-Route::get('profile', 'Auth\ProfileController@index')->name('auth.profile');
+Route::get('/profile', 'Auth\ProfileController@index')->name('auth.profile');
 
-Route::group([['prefix' => 'admin'], ['middleware' =>'auth']], function (){
+Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
     // Dashboard
-    Route::get('dashboard/ringkasan', 'DashboardController@index1');
-    Route::get('dashboard/kritikdansaran', 'DashboardController@index2');
-    Route::get('dashboard/kamarhunian', 'DashboardController@index3');
-    Route::get('dashboard/tamping', 'DashboardController@index4');
+    Route::get('/dashboard/ringkasan', 'DashboardController@index1');
+    Route::get('/dashboard/kritikdansaran', 'DashboardController@index2');
+    Route::get('/dashboard/kamarhunian', 'DashboardController@index3');
+    Route::get('/dashboard/tamping', 'DashboardController@index4');
 
     // Antrian
     Route::get('antrian', 'KunjunganController@antrian')->name('antrian.index');
@@ -59,4 +59,10 @@ Route::group([['prefix' => 'admin'], ['middleware' =>'auth']], function (){
     Route::get('jadwal', 'JadwalController@index')->name('jadwal.index');
     Route::get('jadwal/create', 'JadwalController@create')->name('jadwal.create');
     Route::post('jadwal/create', 'JadwalController@store');
+
+    // Pengunjung
+    Route::get('kunjungan', 'KunjunganController@index_admin')->name('kunjungan.admin');
+
+    // Laporan
+    Route::get('laporan', 'DashboardController@laporan')->name('dashboard.laporan');
 });

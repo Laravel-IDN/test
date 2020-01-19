@@ -23,13 +23,13 @@
 
             <ul class="collapse list-unstyled {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'show' : '' }}" id="dashboardSubmenu">
                 <li class="nav-item">
-                    <a href="/dashboard/ringkasan" class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }}">
+                    <a href="/admin/dashboard/ringkasan" class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                         Ringkasan
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/dashboard/kritikdansaran"  class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }}">
+                    <a href="/admin/dashboard/kritikdansaran"  class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                         Kritik Dan Saran
                     </a>
@@ -41,13 +41,13 @@
                     </a>
                     <ul class="collapse list-unstyled {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'show' : '' }}" id="dashboardSubmenu2">
                         <li class="nav-item">
-                            <a href="/dashboard/kamarhunian" class="nav-link {{ Str::contains(Route::currentRouteName(), 'setting.general') ? 'active' : '' }} ml-4">
+                            <a href="/admin/dashboard/kamarhunian" class="nav-link {{ Str::contains(Route::currentRouteName(), 'setting.general') ? 'active' : '' }} ml-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                                 Kamar Hunian
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/dashboard/tamping"  class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }} ml-4">
+                            <a href="/admin/dashboard/tamping"  class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }} ml-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                                 Tamping
                             </a>
@@ -84,9 +84,9 @@
         </ul>
         @endrole
 
-        @ability('superadmin', 'list-antrian')
+        @ability('admin', 'list-antrian')
         <li class="nav-item border">
-            <a class="nav-link {{ Str::contains(Route::currentRouteName(), 'antrian') ? 'active' : '' }}" href="{{ route('antrian.index') }}">
+            <a href="{{ route('antrian.index') }}" class="nav-link {{ Str::contains(Route::currentRouteName(), 'antrian') ? 'active' : '' }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                      stroke-linejoin="round" class="feather feather-home">
@@ -99,16 +99,16 @@
 
         @role('admin')
         <li class="nav-item border">
-            <a class="nav-link {{ Str::contains(Route::currentRouteName(), 'kunjungan') ? 'active' : '' }}" href="{{ route('kunjungan.index') }}">
+            <a href="{{ route('kunjungan.admin') }}" class="nav-link {{ Str::contains(Route::currentRouteName(), 'kunjungan') ? 'active' : '' }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                Daftar Pengunjung <span class="sr-only">(current)</span>
+                Daftar Kunjungan <span class="sr-only">(current)</span>
             </a>
         </li>
         @endrole
 
         @role('admin')
         <li class="nav-item border">
-            <a class="nav-link {{ Str::contains(Route::currentRouteName(), 'kunjungan') ? 'active' : '' }}" href="{{ route('kunjungan.index') }}">
+            <a href="{{ route('kunjungan.index') }}" class="nav-link {{ Str::contains(Route::currentRouteName(), 'kunjungan') ? 'active' : '' }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
                 Verifikasi Kunjungan <span class="sr-only">(current)</span>
             </a>
@@ -117,7 +117,7 @@
 
         @role('admin')
         <li class="nav-item border">
-            <a class="nav-link {{ Str::contains(Route::currentRouteName(), 'kunjungan') ? 'active' : '' }}" href="{{ route('kunjungan.index') }}">
+            <a href="{{ route('kunjungan.index') }}" class="nav-link {{ Str::contains(Route::currentRouteName(), 'kunjungan') ? 'active' : '' }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                      stroke-linejoin="round" class="feather feather-home">
@@ -166,6 +166,15 @@
                     </a>
                 </li>
             </ul>
+        </li>
+        @endrole
+
+        @role('superadmin')
+        <li class="nav-item border">
+            <a href="{{ route('dashboard.laporan') }}" class="nav-link {{ Str::contains(Route::currentRouteName(), 'kunjungan') ? 'active' : '' }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                Laporan <span class="sr-only">(current)</span>
+            </a>
         </li>
         @endrole
     </ul>
