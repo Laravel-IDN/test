@@ -18,6 +18,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    {{-- Jquery UI --}}
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     {{-- Datepicker CSS --}}
@@ -34,14 +35,15 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
+    @yield('additional_style')
+
+    <!-- Scripts -->
     {{-- Font Awesome --}}
     <script src="https://kit.fontawesome.com/1f9e9c0541.js"></script>
 
-    @yield('additional_style')
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
-    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -245,6 +247,9 @@
 
 <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 <body>
     <div class="wrapper">
         <!-- Sidebar -->

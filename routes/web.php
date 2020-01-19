@@ -26,6 +26,12 @@ Route::get('/kunjungan/detail/{id}', 'KunjunganController@show')->name('kunjunga
 Route::get('profile', 'Auth\ProfileController@index')->name('auth.profile');
 
 Route::group([['prefix' => 'admin'], ['middleware' =>'auth']], function (){
+    // Dashboard
+    Route::get('dashboard/ringkasan', 'DashboardController@index1');
+    Route::get('dashboard/kritikdansaran', 'DashboardController@index2');
+    Route::get('dashboard/kamarhunian', 'DashboardController@index3');
+    Route::get('dashboard/tamping', 'DashboardController@index4');
+
     // Antrian
     Route::get('antrian', 'KunjunganController@antrian')->name('antrian.index');
 

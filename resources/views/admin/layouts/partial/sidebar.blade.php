@@ -9,7 +9,7 @@
 
     <ul class="nav flex-column">
         <li class="sidebar-header">Menu</li>
-        @role('admin')
+        @role('superadmin')
         <li class="nav-item active border">
             <a href="#dashboardSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -21,15 +21,15 @@
                 {{ __('Dashboard') }}
             </a>
 
-            <ul class="collapse list-unstyled {{ Str::contains(Route::currentRouteName(), 'setting.') ? 'show' : '' }}" id="dashboardSubmenu">
+            <ul class="collapse list-unstyled {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'show' : '' }}" id="dashboardSubmenu">
                 <li class="nav-item">
-                    <a href="{{ route('wbp.index') }}" class="nav-link {{ Str::contains(Route::currentRouteName(), 'setting.general') ? 'active' : '' }}">
+                    <a href="/dashboard/ringkasan" class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                         Ringkasan
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('petugas.index') }}"  class="nav-link {{ Str::contains(Route::currentRouteName(), 'setting.landing') ? 'active' : '' }}">
+                    <a href="/dashboard/kritikdansaran"  class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                         Kritik Dan Saran
                     </a>
@@ -39,15 +39,15 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                         {{ __('Analisa Masalah') }}
                     </a>
-                    <ul class="collapse list-unstyled {{ Str::contains(Route::currentRouteName(), 'setting.') ? 'show' : '' }}" id="dashboardSubmenu2">
+                    <ul class="collapse list-unstyled {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'show' : '' }}" id="dashboardSubmenu2">
                         <li class="nav-item">
-                            <a href="{{ route('wbp.index') }}" class="nav-link {{ Str::contains(Route::currentRouteName(), 'setting.general') ? 'active' : '' }} ml-4">
+                            <a href="/dashboard/kamarhunian" class="nav-link {{ Str::contains(Route::currentRouteName(), 'setting.general') ? 'active' : '' }} ml-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                                 Kamar Hunian
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('ruangan.index') }}"  class="nav-link {{ Str::contains(Route::currentRouteName(), 'setting.landing') ? 'active' : '' }} ml-4">
+                            <a href="/dashboard/tamping"  class="nav-link {{ Str::contains(Route::currentRouteName(), 'dashboard.') ? 'active' : '' }} ml-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
                                 Tamping
                             </a>
@@ -82,7 +82,6 @@
                 </a>
             </li>
         </ul>
-
         @endrole
 
         @ability('superadmin', 'list-antrian')
@@ -129,7 +128,7 @@
         </li>
         @endrole
 
-        @role('admin')
+        @role('superadmin')
         <li class="nav-item active border">
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
