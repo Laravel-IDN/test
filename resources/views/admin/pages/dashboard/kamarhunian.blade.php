@@ -16,17 +16,19 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    @foreach($list as $item)
+                        <tr>
+                            <td>{{ $loop->index + $list->firstItem() }}</td>
+                            <td>{{ $item->kode_wbp }}</td>
+                            <td>{{ $item->nama }}</td>
+                            <td>{{ $item->perkara }}</td>
+                            <td>{{ $item->jenis_kejahatan }}</td>
+                            <td>{{ $item->vonis }}</td>
+                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
-
+                {{ $list->links() }}
             </div>
         </div>
     </div>

@@ -62,6 +62,8 @@ Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
 
     // Kunjungan
     Route::get('kunjungan', 'KunjunganController@index_admin')->name('kunjungan.admin');
+    Route::get('kunjungan/detail/{id}', 'KunjunganController@index_admin_detail')->name('kunjungan.admin.detail');
+
     Route::get('kunjungan/wnp', 'KunjunganController@index_admin_blok')->name('kunjungan.admin.blok');
 
     // Laporan

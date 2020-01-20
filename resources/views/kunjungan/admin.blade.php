@@ -31,7 +31,7 @@
                             <h6><span class="badge badge-danger">Pending</span></h6>
                         </td>
                         <td>
-                            <a href="{{ route('kunjungan.detail', 1) }}" class="btn btn-sm btn-success">Detail</a>
+                            <a href="{{ route('kunjungan.admin.detail', 1) }}" class="btn btn-sm btn-success">Detail</a>
                         </td>
                     </tr>
                     <tr>
@@ -42,7 +42,7 @@
                             <h6><span class="badge badge-success">Selesai</span></h6>
                         </td>
                         <td>
-                            <a href="{{ route('kunjungan.detail', 1) }}" class="btn btn-sm btn-success">Detail</a>
+                            <a href="{{ route('kunjungan.admin.detail', 1) }}" class="btn btn-sm btn-success">Detail</a>
                         </td>
                     </tr>
                 </tbody>
