@@ -52,7 +52,7 @@
             <div class="col-3">
                 <div class="form-group">
                     <label>Filter by Year:</label>
-                    <input type="text" class="form-control datepicker" placeholder="yyyy">
+                    <input type="text" class="form-control yearpicker" placeholder="yyyy">
                 </div>
             </div>
         </div>
@@ -78,6 +78,20 @@
 
 @section('additional_scripts')
     <script>
+        $(function() {
+            $('.yearpicker').datepicker( {
+                changeMonth: false,
+                changeYear: true,
+                showButtonPanel: false,
+                dateFormat: 'yy',
+                onClose: function(dateText, inst) {
+                    $(this).datepicker('setDate', new Date('2017'));
+                }
+            }).focus(function () {
+                $(".ui-datepicker-month").hide();
+                $(".ui-datepicker-calendar").hide();
+            });
+        });
         var options1 = {
             series: [
                 {

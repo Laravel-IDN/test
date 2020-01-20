@@ -7,11 +7,6 @@
             Riwayat Kunjungan
         </h3>
         <div class="card-body">
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
-                </div>
-            @endif
             <table class="table table-bordered">
                 <thead>
                     <tr>

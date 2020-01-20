@@ -38,7 +38,7 @@ class WBPController extends Controller
     {
         $new = WBP::create($request->except(['_token']));
 
-        return redirect()->route('wbp.index');
+        return redirect()->route('wbp.index')->with('status', 'Berhasil Mendaftar WBP!');
     }
 
     /**

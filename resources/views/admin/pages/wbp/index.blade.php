@@ -7,6 +7,7 @@
             <div class="card">
                 <h4 class="card-header">Daftar WBP</h4>
                 <div class="card-body">
+
                     <a href="{{ route('wbp.create') }}" class="btn btn-info float-right"><i class="fa fa-plus"></i> Tambah</a>
                     <table class="table table-bordered">
                         <thead>
@@ -25,7 +26,7 @@
                             @foreach($list as $item)
                                 <tr>
                                     <td>{{ $loop->index + $list->firstItem() }}</td>
-                                    <td>{{ ''  }}</td>
+                                    <td>{{ $item->kode_wbp  }}</td>
                                     <td>{{ $item->nama  }}</td>
                                     <td>{{ $item->tempat_lahir.', '.$item->tanggal_lahir  }}</td>
                                     <td>{{ $item->alamat  }}</td>

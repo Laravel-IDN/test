@@ -17,13 +17,17 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/kunjungan', 'KunjunganController@index')->name('kunjungan.index');
-Route::get('/kunjungan/create', 'KunjunganController@create')->name('kunjungan.create');
-Route::post('/kunjungan/create', 'KunjunganController@store');
-Route::get('/kunjungan/detail/{id}', 'KunjunganController@show')->name('kunjungan.detail');
+Route::group(['middleware' =>'auth'], function (){
 
-Route::get('/profile', 'Auth\ProfileController@index')->name('auth.profile');
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/kunjungan', 'KunjunganController@index')->name('kunjungan.index');
+    Route::get('/kunjungan/create', 'KunjunganController@create')->name('kunjungan.create');
+    Route::post('/kunjungan/create', 'KunjunganController@store');
+    Route::get('/kunjungan/detail/{id}', 'KunjunganController@show')->name('kunjungan.detail');
+
+    Route::get('/profile', 'Auth\ProfileController@index')->name('auth.profile');
+
+});
 
 Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
     // Dashboard

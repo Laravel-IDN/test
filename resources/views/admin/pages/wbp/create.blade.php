@@ -24,12 +24,12 @@
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Nama</label>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="nama" placeholder="nama" required>
+                                <input type="text" class="form-control" name="nama" placeholder="nama">
                             </div>
 
                             <label class="col-sm-2 col-form-label">Perkara</label>
                             <div class="col-sm-4">
-                                <textarea name="perkara" class="form-control" rows="2" cols="53"  placeholder="perkara" required="required"></textarea>
+                                <textarea name="perkara" class="form-control" rows="2" cols="53"  placeholder="perkara"></textarea>
                             </div>
                         </div>
 
@@ -43,7 +43,7 @@
                             </div>
                             <label class="col-sm-2 col-form-label">Status</label>
                             <div class="col-sm-4">
-                                <select class="form-control single-select" name="status" required>
+                                <select class="form-control single-select" name="status">
                                     <option value="">Pilih</option>
                                     <option value="Tahanan Kepolisian">Tahanan Kepolisian</option>
                                     <option value="Tahanan Kejaksaan">Tahanan Kejaksaan</option>
@@ -56,7 +56,7 @@
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Alamat</label>
                             <div class="col-sm-4">
-                                <textarea name="alamat" class="form-control" rows="2" cols="53" placeholder="alamat" required="required"></textarea>
+                                <textarea name="alamat" class="form-control" rows="2" cols="53" placeholder="alamat"></textarea>
                             </div>
                         </div>
                         <div class="hr-line-dashed"></div>
