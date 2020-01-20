@@ -49,8 +49,14 @@
                                 </div>
                             </div>
                             <hr>
-                            <h5>Data WBP</h5>
+                            <h5>Data WBP
+                                <button type="button" id="addWBP" class="btn btn-success float-right"><i
+                                        class="fa fa-plus"></i></button>
+                            </h5>
+                            <small class="text-danger">* Maksimal 2 Warga Binaan Pemasyarakatan</small>
                             <hr>
+                            <div id="listWBP">
+                                <div id="WBP">
                             <div class="form-group">
                                 <label>Cari WBP</label>
                                 <select class="form-control select2" id="chooseWBP">
@@ -74,6 +80,8 @@
                                     <option>Lainnya</option>
                                 </select>
                             </div>
+                        </div>
+                    </div>
                             <hr>
                             <h5>Data Pengikut
                                 <button type="button" id="addPengikut" class="btn btn-success float-right"><i
@@ -213,6 +221,12 @@
                 var clones = $('#pengikut').clone();
                 // set to varaible to make op clear
                 $('#listPengikut').append(clones);
+            });
+
+            $('#addWBP').on('click', function () {
+                var clones = $('#WBP').clone();
+                // set to varaible to make op clear
+                $('#listWBP').append(clones);
             });
         });
     </script>

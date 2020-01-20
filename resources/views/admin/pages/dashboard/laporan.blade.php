@@ -15,14 +15,14 @@
                                     </div>
                                     <div class="col-md-10" style="font-size:16pt;margin-top:20px;">
                                         <div>KEMENTERIAN HUKUM DAN HAK ASASI MANUSIA REPUBLIK INDONESIA</div>
-                                        <div>KANTOR WILAYAH KEPULAUAN BANGKA BELITUNG</div>
-                                        <div>LEMBAGA PEMASYARAKATAN PEREMPUAN KELAS III PANGKALPINANG
+                                        <div>KANTOR WILAYAH DKI JAKARTA</div>
+                                        <div>LEMBAGA PEMASYARAKATAN PEREMPUAN KELAS IIA JAKARTA
                                         </div>
                                         <div style="font-size:10pt;"><i>
-                                                Jalan Sanggul Dewa Kel. Batin Tikal Kec. Tamansari Pangkalpinang
+                                                Jalan Pondok Bambu, Kel. Pondok Bambu, Kec. Duren Sawit, Jakarta Timur, DKI Jakarta
                                             </i></div>
                                         <div style="font-size:10pt; color:blue;"><u>
-                                                Telp. (0717) 9108600 e-mail : lpp.pangkalpinang@gmail.com
+                                                Telp. (021) 21385195 e-mail : lpp.jakarta@gmail.com
                                             </u></div>
 
                                     </div>
@@ -44,8 +44,8 @@
                             <td style="border:3px solid black;">NIK</td>
                             <td style="border:3px solid black;">Nama Pengunjung</td>
                             <td style="border:3px solid black;">Tanggal Kunjungan</td>
-                            <td style="border:3px solid black;">Ruangan</td>
-                            <td style="border:3px solid black;">Petugas</td>
+                            <td style="border:3px solid black;">Waktu Kunjungan</td>
+                            <td style="border:3px solid black;">Meja</td>                            
                         </tr>
 
                         <td colspan="10">
@@ -64,16 +64,16 @@
 
                             <div class="row" style="font-size:12pt;margin-top:20px;">
                                 <div class="col-md-1"></div>
-                                <div class="col-md-4" align="center">Nebi Viarleni, Amd.IP.,SH.,MH</div>
+                                <div class="col-md-4" align="center">Yuli Niartini, Bc.IP.,SH.,MH</div>
                                 <div class="col-md-2"></div>
-                                <div class="col-md-4" align="center">Rosmita,SH</div>
+                                <div class="col-md-4" align="center">Enny Yulistiawati, Bc.IP</div>
                                 <div class="col-md-1"></div>
                             </div>
                             <div class="row" style="font-size:12pt;margin-bottom:20px;">
                                 <div class="col-md-1"></div>
-                                <div class="col-md-4" align="center">NIP.19800728 200012 2 002</div>
+                                <div class="col-md-4" align="center">NIP.19620709 1987 03 2 001</div>
                                 <div class="col-md-2"></div>
-                                <div class="col-md-4" align="center">NIP.19850404 200801 2 001</div>
+                                <div class="col-md-4" align="center">NIP.19680707 1991 03 2 001</div>
                                 <div class="col-md-1"></div>
                             </div>
                         </td>
