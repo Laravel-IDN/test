@@ -25,7 +25,7 @@
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Coki</td>
+                    <td>Ratna Sarumpaet</td>
                     <td>23-06-2019 09:30-10:15</td>
                     <td>
                         <h6><span class="badge badge-success">Sudah Di Panggil</span></h6>
@@ -36,7 +36,7 @@
                 </tr>
                     <tr>
                         <td>2</td>
-                        <td>Rahmat</td>
+                        <td>Tri Retno Prayudati</td>
                         <td>01-05-2019 09:30-10:15</td>
                         <td>
                             <h6><span class="badge badge-danger">Belum Dipanggil</span></h6>
@@ -46,7 +46,7 @@
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Robby</td>
+                        <td>Rani Mahreta</td>
                         <td>01-05-2019 09:30-10:15</td>
                         <td>
                             <h6><span class="badge badge-danger">Belum Dipanggil</span></h6>
@@ -56,7 +56,7 @@
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Ady Febrian</td>
+                        <td>Rey Utami</td>
                         <td>01-05-2019 09:30-10:15</td>
                         <td>
                             <h6><span class="badge badge-danger">Belum Dipanggil</span></h6>
@@ -66,7 +66,7 @@
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Joko Santoro</td>
+                        <td>Hardianti Mustika</td>
                         <td>01-05-2019 09:30-10:15</td>
                         <td>
                             <h6><span class="badge badge-danger">Belum Dipanggil</span></h6>

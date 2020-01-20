@@ -23,7 +23,7 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Rudi Satrio</td>
+                        <td>Atiqah Hasiholan</td>
                         <td>#PD1002</td>
                         <td>
                             <h6><span class="badge badge-danger">Pending</span></h6>
@@ -31,7 +31,7 @@
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Reza Bahari</td>
+                        <td>Bagus</td>
                         <td>#PD1105</td>
                         <td>
                             <h6><span class="badge badge-success">Selesai</span></h6>

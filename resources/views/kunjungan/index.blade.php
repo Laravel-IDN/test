@@ -25,7 +25,7 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Atiqah Hasiholan</td>
+                        <td>Ratna Sarumpaet</td>
                         <td>01-05-2019 09:30-10:15</td>
                         <td>
                             <h6><span class="badge badge-danger">Pending</span></h6>
@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Coki</td>
+                        <td>Try Retno Prayudati</td>
                         <td>23-06-2019 09:30-10:15</td>
                         <td>
                             <h6><span class="badge badge-success">Selesai</span></h6>
