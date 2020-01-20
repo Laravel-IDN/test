@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Feedback;
+use App\WBP;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -11,15 +13,20 @@ class DashboardController extends Controller
     }
 
     public function index2(){
-        return view('admin.pages.dashboard.kritikdansaran');
+        $list = Feedback::paginate(10);
+        return view('admin.pages.dashboard.kritikdansaran', compact('list'));
     }
 
     public function index3(){
-        return view('admin.pages.dashboard.kamarhunian');
+        $list = WBP::paginate(10);
+
+        return view('admin.pages.dashboard.kamarhunian', compact('list'));
     }
 
     public function index4(){
-        return view('admin.pages.dashboard.tamping');
+        $list = WBP::paginate(10);
+
+        return view('admin.pages.dashboard.tamping', compact('list'));
     }
 
     public function laporan(){

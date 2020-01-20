@@ -94,7 +94,12 @@ class KunjunganController extends Controller
         return view('kunjungan.admin');
     }
 
+    public function index_admin_detail(){
+        return view('kunjungan.admin_detail');
+    }
+
     public function index_admin_blok(){
-        return view('kunjungan.admin_blok');
+        $list = WBP::paginate(10);
+        return view('kunjungan.admin_blok', compact('list'));
     }
 }

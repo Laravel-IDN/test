@@ -16,16 +16,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+                        @foreach($list as $item)
+                            <tr>
+                                <td>{{ $loop->index + $list->firstItem() }}</td>
+                                <td>{{ $item->kunjungan_id }}</td>
+                                <td>{{ $item->waktu_kunjungan }}</td>
+                                <td>{{ $item->kritik }}</td>
+                                <td>{{ $item->saran }}</td>
+                                <td>{{ $item->rating }}</td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
+                {{ $list->links() }}
 
             </div>
         </div>
