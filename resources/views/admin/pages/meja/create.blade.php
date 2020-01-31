@@ -17,7 +17,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12 mx-auto">
             <div class="card">
-                <h4 class="card-header">Tambah WBP</h4>
+                <h4 class="card-header">Tambah Meja</h4>
                 <div class="card-body">
                     <form action="{{ route('wbp.create') }}" method="POST">
                         @csrf
