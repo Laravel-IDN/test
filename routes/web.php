@@ -46,6 +46,9 @@ Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
     Route::get('wbp/edit/{id}', 'WBPController@edit')->name('wbp.edit');
     Route::post('wbp/edit/{id}', 'WBPController@update');
 
+    // Status WBP
+    Route::get('wbp/status', 'WBPController@index_status')->name('status.index');
+    Route::get('wbp/status/create', 'WBPController@create_status')->name('status.create');
 
     // Petugas
     Route::get('petugas', 'PetugasController@index')->name('petugas.index');

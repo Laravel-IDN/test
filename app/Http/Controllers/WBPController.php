@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\WBP;
+use App\WBPStatus;
 use Illuminate\Http\Request;
 
 class WBPController extends Controller
@@ -18,6 +19,12 @@ class WBPController extends Controller
         return view('admin.pages.wbp.index', compact('list'));
     }
 
+    public function index_status()
+    {
+        $list = WBPStatus::paginate(10);
+        return view('admin.pages.wbp.index_status', compact('list'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -26,6 +33,12 @@ class WBPController extends Controller
     public function create()
     {
         return view('admin.pages.wbp.create');
+    }
+
+    public function create_status()
+    {
+        $wbp = WBP::all();
+        return view('admin.pages.wbp.create_status', compact('wbp'));
     }
 
     /**
