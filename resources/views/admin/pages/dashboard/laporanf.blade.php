@@ -43,33 +43,33 @@
                             <td style="border:3px solid black;">No</td>
                             <td style="border:3px solid black;">ID WBP</td>
                             <td style="border:3px solid black;">Nama WBP</td>
-                            <td style="border:3px solid black;">Status</td>
+                            <td style="border:3px solid black;">Keterangan</td>
                             <td style="border:3px solid black;">Tanggal Mulai</td>
                             <td style="border:3px solid black;">Tanggal Berakhir</td>
                         </tr>
                         <tr align="center" colspan="10">
-                            <td style="border:3px solid black;">No</td>
-                            <td style="border:3px solid black;">ID WBP</td>
-                            <td style="border:3px solid black;">Nama WBP</td>
-                            <td style="border:3px solid black;">Status</td>
-                            <td style="border:3px solid black;">Tanggal Mulai</td>
-                            <td style="border:3px solid black;">Tanggal Berakhir</td>
+                            <td style="border:3px solid black;">1</td>
+                            <td style="border:3px solid black;">WBP417</td>
+                            <td style="border:3px solid black;">Latika Jelita</td>
+                            <td style="border:3px solid black;">Perkelahian</td>
+                            <td style="border:3px solid black;">03-01-2019</td>
+                            <td style="border:3px solid black;">06-01-2019</td>
                         </tr>
                         <tr align="center" colspan="10">
-                            <td style="border:3px solid black;">No</td>
-                            <td style="border:3px solid black;">ID WBP</td>
-                            <td style="border:3px solid black;">Nama WBP</td>
-                            <td style="border:3px solid black;">Status</td>
-                            <td style="border:3px solid black;">Tanggal Mulai</td>
-                            <td style="border:3px solid black;">Tanggal Berakhir</td>
+                            <td style="border:3px solid black;">2</td>
+                            <td style="border:3px solid black;">WBP108</td>
+                            <td style="border:3px solid black;">Gina Farhunnisa</td>
+                            <td style="border:3px solid black;">Perkelahian</td>
+                            <td style="border:3px solid black;">19-01-2019</td>
+                            <td style="border:3px solid black;">22-01-2019</td>
                         </tr>
                         <tr align="center" colspan="10">
-                            <td style="border:3px solid black;">No</td>
-                            <td style="border:3px solid black;">ID WBP</td>
-                            <td style="border:3px solid black;">Nama WBP</td>
-                            <td style="border:3px solid black;">Status</td>
-                            <td style="border:3px solid black;">Tanggal Mulai</td>
-                            <td style="border:3px solid black;">Tanggal Berakhir</td>
+                            <td style="border:3px solid black;">3</td>
+                            <td style="border:3px solid black;">WBP737</td>
+                            <td style="border:3px solid black;">Dalima Iriana</td>
+                            <td style="border:3px solid black;">Bolos Apel</td>
+                            <td style="border:3px solid black;">20-01-2019</td>
+                            <td style="border:3px solid black;">21-01-2019</td>
                         </tr>
 
                         <td colspan="10">

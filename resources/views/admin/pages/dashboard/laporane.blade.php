@@ -46,34 +46,34 @@
                             <td style="border:3px solid black;">Nama WBP</td>
                             <td style="border:3px solid black;">Tanggal Kunjungan</td>
                             <td style="border:3px solid black;">Waktu Kunjungan</td>
-                            <td style="border:3px solid black;">Meja</td>
+                            <td style="border:3px solid black;">No. Meja</td>
                         </tr>
                         <tr align="center" colspan="10">
-                            <td style="border:3px solid black;">No</td>
-                            <td style="border:3px solid black;">NIK</td>
-                            <td style="border:3px solid black;">Nama Pengunjung</td>
-                            <td style="border:3px solid black;">Nama WBP</td>
-                            <td style="border:3px solid black;">Tanggal Kunjungan</td>
-                            <td style="border:3px solid black;">Waktu Kunjungan</td>
-                            <td style="border:3px solid black;">Meja</td>
+                            <td style="border:3px solid black;">1</td>
+                            <td style="border:3px solid black;">3201371511910002</td>
+                            <td style="border:3px solid black;">Irawan Sadri</td>
+                            <td style="border:3px solid black;">Vanya Devi</td>
+                            <td style="border:3px solid black;">02-03-2019</td>
+                            <td style="border:3px solid black;">09:30 - 10:15</td>
+                            <td style="border:3px solid black;">Meja1</td>
                         </tr>
                         <tr align="center" colspan="10">
-                            <td style="border:3px solid black;">No</td>
-                            <td style="border:3px solid black;">NIK</td>
-                            <td style="border:3px solid black;">Nama Pengunjung</td>
-                            <td style="border:3px solid black;">Nama WBP</td>
-                            <td style="border:3px solid black;">Tanggal Kunjungan</td>
-                            <td style="border:3px solid black;">Waktu Kunjungan</td>
-                            <td style="border:3px solid black;">Meja</td>
+                            <td style="border:3px solid black;">2</td>
+                            <td style="border:3px solid black;">3573054909920001</td>
+                            <td style="border:3px solid black;">Arifin</td>
+                            <td style="border:3px solid black;">Cinthia Mala</td>
+                            <td style="border:3px solid black;">02-03-2019</td>
+                            <td style="border:3px solid black;">09:30 - 10:15</td>
+                            <td style="border:3px solid black;">Meja2</td>
                         </tr>
                         <tr align="center" colspan="10">
-                            <td style="border:3px solid black;">No</td>
-                            <td style="border:3px solid black;">NIK</td>
-                            <td style="border:3px solid black;">Nama Pengunjung</td>
-                            <td style="border:3px solid black;">Nama WBP</td>
-                            <td style="border:3px solid black;">Tanggal Kunjungan</td>
-                            <td style="border:3px solid black;">Waktu Kunjungan</td>
-                            <td style="border:3px solid black;">Meja</td>
+                            <td style="border:3px solid black;">3</td>
+                            <td style="border:3px solid black;">3271046504930002</td>
+                            <td style="border:3px solid black;">Rudy Razzy</td>
+                            <td style="border:3px solid black;">Humaira Uchita</td>
+                            <td style="border:3px solid black;">02-03-2019</td>
+                            <td style="border:3px solid black;">14:15 - 15:00</td>
+                            <td style="border:3px solid black;">Meja1</td>
                         </tr>
 
                         <td colspan="10">
