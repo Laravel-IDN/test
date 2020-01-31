@@ -7,7 +7,7 @@
             <div class="card">
                 <h4 class="card-header">Daftar Jadwal</h4>
                 <div class="card-body">
-                    <a href="{{ route('wbp.create') }}" class="btn btn-info float-right"><i class="fa fa-plus"></i> Tambah</a>
+                    <a href="{{ route('jadwal.create') }}" class="btn btn-info float-right"><i class="fa fa-plus"></i> Tambah</a>
                     <table class="table table-bordered">
                         <thead>
                             <tr>
