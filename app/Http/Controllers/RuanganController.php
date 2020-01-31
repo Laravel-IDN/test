@@ -15,7 +15,7 @@ class RuanganController extends Controller
     public function index()
     {
         $list = Ruangan::paginate(10);
-        return view('admin.pages.ruangan.index', compact('list'));
+        return view('admin.pages.meja.index', compact('list'));
     }
 
     /**
@@ -25,7 +25,8 @@ class RuanganController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.meja.create');
+
     }
 
     /**

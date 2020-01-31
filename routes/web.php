@@ -56,9 +56,9 @@ Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
     Route::post('petugas/create', 'PetugasController@store');
 
     // Petugas
-    Route::get('ruangan', 'RuanganController@index')->name('ruangan.index');
-    Route::get('ruangan/create', 'RuanganController@create')->name('ruangan.create');
-    Route::post('ruangan/create', 'RuanganController@store');
+    Route::get('meja', 'RuanganController@index')->name('meja.index');
+    Route::get('meja/create', 'RuanganController@create')->name('meja.create');
+    Route::post('meja/create', 'RuanganController@store');
 
     // Pengunjung
     Route::get('pengunjung', 'PengunjungController@index')->name('pengunjung.index');
