@@ -48,6 +48,33 @@
                             <td style="border:3px solid black;">Waktu Kunjungan</td>
                             <td style="border:3px solid black;">Meja</td>
                         </tr>
+                        <tr align="center" colspan="10">
+                            <td style="border:3px solid black;">No</td>
+                            <td style="border:3px solid black;">NIK</td>
+                            <td style="border:3px solid black;">Nama Pengunjung</td>
+                            <td style="border:3px solid black;">Nama WBP</td>
+                            <td style="border:3px solid black;">Tanggal Kunjungan</td>
+                            <td style="border:3px solid black;">Waktu Kunjungan</td>
+                            <td style="border:3px solid black;">Meja</td>
+                        </tr>
+                        <tr align="center" colspan="10">
+                            <td style="border:3px solid black;">No</td>
+                            <td style="border:3px solid black;">NIK</td>
+                            <td style="border:3px solid black;">Nama Pengunjung</td>
+                            <td style="border:3px solid black;">Nama WBP</td>
+                            <td style="border:3px solid black;">Tanggal Kunjungan</td>
+                            <td style="border:3px solid black;">Waktu Kunjungan</td>
+                            <td style="border:3px solid black;">Meja</td>
+                        </tr>
+                        <tr align="center" colspan="10">
+                            <td style="border:3px solid black;">No</td>
+                            <td style="border:3px solid black;">NIK</td>
+                            <td style="border:3px solid black;">Nama Pengunjung</td>
+                            <td style="border:3px solid black;">Nama WBP</td>
+                            <td style="border:3px solid black;">Tanggal Kunjungan</td>
+                            <td style="border:3px solid black;">Waktu Kunjungan</td>
+                            <td style="border:3px solid black;">Meja</td>
+                        </tr>
 
                         <td colspan="10">
                             <div class="row" style="margin-top:20px;font-size:12pt;">

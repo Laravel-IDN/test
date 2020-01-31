@@ -31,7 +31,7 @@
                             </th>
 
                         <tr>
-                            <th colspan="7"><strong><h2 align="center">LAPORAN KUNJUNGAN WARGA BINAAN PEMASYARAKATAN</h2></strong>
+                            <th colspan="7"><strong><h2 align="center">LAPORAN STATUS WARGA BINAAN PEMASYARAKATAN</h2></strong>
                             </th>
                             <th colspan="7">
                                 <strong><h2 align="center"></h2></strong>
@@ -41,7 +41,32 @@
                         <tbody style="font-size:12pt; ">
                         <tr align="center" colspan="10" style="background-color:#dc143c; color:white;">
                             <td style="border:3px solid black;">No</td>
-                            <td style="border:3px solid black;">Id WBP/Nama WBP</td>
+                            <td style="border:3px solid black;">ID WBP</td>
+                            <td style="border:3px solid black;">Nama WBP</td>
+                            <td style="border:3px solid black;">Status</td>
+                            <td style="border:3px solid black;">Tanggal Mulai</td>
+                            <td style="border:3px solid black;">Tanggal Berakhir</td>
+                        </tr>
+                        <tr align="center" colspan="10">
+                            <td style="border:3px solid black;">No</td>
+                            <td style="border:3px solid black;">ID WBP</td>
+                            <td style="border:3px solid black;">Nama WBP</td>
+                            <td style="border:3px solid black;">Status</td>
+                            <td style="border:3px solid black;">Tanggal Mulai</td>
+                            <td style="border:3px solid black;">Tanggal Berakhir</td>
+                        </tr>
+                        <tr align="center" colspan="10">
+                            <td style="border:3px solid black;">No</td>
+                            <td style="border:3px solid black;">ID WBP</td>
+                            <td style="border:3px solid black;">Nama WBP</td>
+                            <td style="border:3px solid black;">Status</td>
+                            <td style="border:3px solid black;">Tanggal Mulai</td>
+                            <td style="border:3px solid black;">Tanggal Berakhir</td>
+                        </tr>
+                        <tr align="center" colspan="10">
+                            <td style="border:3px solid black;">No</td>
+                            <td style="border:3px solid black;">ID WBP</td>
+                            <td style="border:3px solid black;">Nama WBP</td>
                             <td style="border:3px solid black;">Status</td>
                             <td style="border:3px solid black;">Tanggal Mulai</td>
                             <td style="border:3px solid black;">Tanggal Berakhir</td>
