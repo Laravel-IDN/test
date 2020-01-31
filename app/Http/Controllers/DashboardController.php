@@ -29,7 +29,11 @@ class DashboardController extends Controller
         return view('admin.pages.dashboard.tamping', compact('list'));
     }
 
-    public function laporan(){
-        return view('admin.pages.dashboard.laporan');
+    public function laporanf(){
+        return view('admin.pages.dashboard.laporanf');
+    }
+
+    public function laporane(){
+        return view('admin.pages.dashboard.laporane');
     }
 }

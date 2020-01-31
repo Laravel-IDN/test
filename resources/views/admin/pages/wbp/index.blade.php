@@ -3,13 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12 mx-auto">
+        <div class="col-md-12">
             <div class="card">
                 <h4 class="card-header">Daftar WBP</h4>
                 <div class="card-body">
-
                     <a href="{{ route('wbp.create') }}" class="btn btn-info float-right"><i class="fa fa-plus"></i> Tambah</a>
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table-responsive">
                         <thead>
                             <tr>
                                 <th>No</th>
