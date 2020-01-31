@@ -19,29 +19,34 @@
                         <h5>Data Pengunjung & Pengikut</h5>
                         <hr>
                         <div class="row">
-                            <div class="col-md-3">
-                                <img src="{{ asset('images/icon_user.png') }}" alt="..." class="img-thumbnail rounded">
-{{--                                <dl class="row">--}}
-{{--                                    <dt class="col-sm-3">Description lists</dt>--}}
-{{--                                    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>--}}
-{{--                                </dl>--}}
-
+                            <div class="col-md-4">
+                                <img src="{{ asset('images/icon_user2.jpeg') }}" alt="..." class="img-thumbnail rounded">
+                                <label>NIK: 1003457984565729</label>
+                                <label>Nama: Tri Retno Prayudati</label>
                             </div>
-                            <div class="col-md-2 text-center">
+                            <div class="col-md-2 text-center" style="font-size: 12px">
                                 <small class="font-weight-bold">Pengikut 1</small>
-                                <img src="{{ asset('images/icon_user.png') }}" alt="..." class="img-thumbnail rounded">
+                                <img src="{{ asset('images/icon_user2.jpeg') }}" alt="..." class="img-thumbnail rounded">
+                                <label>NIK: 1000675530428553</label>
+                                <label>Nama: Cindy Viona</label>
                             </div>
-                            <div class="col-md-2 text-center">
+                            <div class="col-md-2 text-center" style="font-size: 12px">
                                 <small class="font-weight-bold">Pengikut 2</small>
-                                <img src="{{ asset('images/icon_user.png') }}" alt="..." class="img-thumbnail rounded">
+                                <img src="{{ asset('images/icon_user2.jpeg') }}" alt="..." class="img-thumbnail rounded">
+                                <label>NIK: 1008494328780865</label>
+                                <label>Nama: Ronny Wijaya</label>
                             </div>
-                            <div class="col-md-2 text-center">
+                            <div class="col-md-2 text-center" style="font-size: 12px">
                                 <small class="font-weight-bold">Pengikut 3</small>
-                                <img src="{{ asset('images/icon_user.png') }}" alt="..." class="img-thumbnail rounded">
+                                <img src="{{ asset('images/icon_user2.jpeg') }}" alt="..." class="img-thumbnail rounded">
+                                <label>NIK: 1008920183920128</label>
+                                <label>Nama: Surya Bakti</label>
                             </div>
-                            <div class="col-md-2 text-center">
+                            <div class="col-md-2 text-center" style="font-size: 12px">
                                 <small class="font-weight-bold">Pengikut 4</small>
-                                <img src="{{ asset('images/icon_user.png') }}" alt="..." class="img-thumbnail rounded">
+                                <img src="{{ asset('images/icon_user2.jpeg') }}" alt="..." class="img-thumbnail rounded">
+                                <label>NIK: 1009201229102876</label>
+                                <label>Nama: Dimaz Saputra</label>
                             </div>
                         </div>
 
@@ -50,14 +55,12 @@
                         <hr>
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="{{ asset('images/icon_user.png') }}" alt="..." class="img-thumbnail rounded">
-                                <label>Nama: Test</label>
-                                <label>NIK: 123913201390132930</label>
+                                <img src="{{ asset('images/icon_user2.jpeg') }}" alt="..." class="img-thumbnail rounded">
+                                <label>Nama: Dalima Iriana</label>
                             </div>
                             <div class="col-md-3">
-                                <img src="{{ asset('images/icon_user.png') }}" alt="..." class="img-thumbnail rounded">
-                                <label>Nama: Test</label>
-                                <label>NIK: 123913201390132930</label>
+                                <img src="{{ asset('images/icon_user2.jpeg') }}" alt="..." class="img-thumbnail rounded">
+                                <label>Nama: Oliva Tania</label>
                             </div>
                             <div class="col-md-6">
                                 <div class="card">
