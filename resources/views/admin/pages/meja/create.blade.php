@@ -22,8 +22,8 @@
                     <form action="{{ route('wbp.create') }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>Kode Meja</label>
-                            <input class="form-control" placeholder="kode meja">
+                            <label>Nama Meja</label>
+                            <input class="form-control" placeholder="nama meja">
                         </div>
 
                         <div class="hr-line-dashed"></div>
