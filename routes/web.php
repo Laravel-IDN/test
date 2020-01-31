@@ -74,7 +74,7 @@ Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
     Route::get('kunjungan', 'KunjunganController@index_admin')->name('kunjungan.admin');
     Route::get('kunjungan/detail/{id}', 'KunjunganController@index_admin_detail')->name('kunjungan.admin.detail');
 
-    Route::get('kunjungan/wnp', 'KunjunganController@index_admin_blok')->name('kunjungan.admin.blok');
+    Route::get('kunjungan/wbp', 'KunjunganController@index_admin_blok')->name('kunjungan.admin.blok');
 
     // Laporan
     Route::get('laporan/f', 'DashboardController@laporanf')->name('laporan.f');

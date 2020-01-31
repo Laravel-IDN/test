@@ -30,20 +30,17 @@
                         <td>
                             <h6><span class="badge badge-success">Sudah Di Panggil</span></h6>
                         </td>
-                        <td>
-                            <a href="{{ route('kunjungan.detail', 1) }}" class="btn btn-sm btn-success">Paggil</a>
-                        </td>
                     </tr>
                     @foreach($list as $item)
                         <tr>
-                            <td>{{ $loop->index + $list->firstItem() }}</td>
+                            <td>{{ $loop->index + $list->firstItem() + 1 }}</td>
                             <td>{{ $item->nama }}</td>
                             <td>23-06-2019 09:30-10:15</td>
-                            <td>
+                            <td class="text-center">
                                 <h6><span class="badge badge-danger">Belum di Panggil</span></h6>
                             </td>
                             <td>
-{{--                                <a href="{{ route('kunjungan.detail', 1) }}" class="btn btn-sm btn-success">Paggil</a>--}}
+                                <a href="{{ route('kunjungan.detail', 1) }}" class="btn btn-sm btn-success">Paggil</a>
                             </td>
                         </tr>
                     @endforeach
