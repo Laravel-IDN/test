@@ -39,7 +39,9 @@
 
     <!-- Scripts -->
     {{-- Font Awesome --}}
+
     <script src="https://kit.fontawesome.com/1f9e9c0541.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -54,7 +56,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-
+    <link href="{{ asset('plugins/bootstrap-star-rating/css/star-rating.css') }}" media="all" rel="stylesheet" type="text/css" />
+    <!-- optionally if you need to use a theme, then include the theme file as mentioned below -->
+    <link href="{{ asset('plugins/bootstrap-star-rating/themes/krajee-svg/theme.css') }}" media="all" rel="stylesheet" type="text/css" />
     @yield('additional_style')
 </head>
 
@@ -281,11 +285,23 @@
             </nav>
 
             <div class="container">
+                <div class="container">
+
                 @if (session('status'))
                     <div class="alert alert-success">
                         {{ session('status') }}
                     </div>
                 @endif
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                </div>
 
                 @yield('content')
             </div>

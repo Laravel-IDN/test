@@ -16,9 +16,11 @@
                                 <th>Kode WBP</th>
                                 <th>Nama</th>
                                 <th>Tempat Tanggal Lahir</th>
-                                <th>Alamat</th>
+                                <th>Agama</th>
                                 <th>Perkara</th>
-                                <th>Status</th>
+                                <th>Jenis Kejahatan</th>
+                                <th>Tanggal Berperkara</th>
+                                <th>Vonis</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -28,12 +30,14 @@
                                     <td>{{ $loop->index + $list->firstItem() }}</td>
                                     <td>{{ $item->kode_wbp  }}</td>
                                     <td>{{ $item->nama  }}</td>
-                                    <td>{{ $item->tempat_lahir.', '.$item->tanggal_lahir  }}</td>
-                                    <td>{{ $item->alamat  }}</td>
+                                    <td>{{ $item->tempat_lahir.', '.\Carbon\Carbon::createFromDate($item->tanggal_lahir)->format('d-m-Y')  }}</td>
+                                    <td>{{ $item->agama  }}</td>
                                     <td>{{ $item->perkara  }}</td>
-                                    <td>{{ $item->status  }}</td>
+                                    <td>{{ $item->jenis_kejahatan  }}</td>
+                                    <td>{{ \Carbon\Carbon::createFromDate($item->tgl_berperkara)->format('d-m-Y')   }}</td>
+                                    <td>{{ $item->vonis  }}</td>
                                     <td>
-                                        <button class="btn btn-sm btn-info"><i class="fa fa-edit"></i></button>
+                                        <a href="{{ route('wbp.edit', $item->id) }}" class="btn btn-sm btn-info"><i class="fa fa-edit"></i></a>
                                         <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                                     </td>
                                 </tr>

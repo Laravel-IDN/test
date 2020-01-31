@@ -36,7 +36,28 @@ class WBPController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+           'nama' => 'required',
+           'tempat_lahir' => 'required',
+           'tanggal_lahir' => 'required',
+           'perkara' => 'required',
+           'jenis_kejahatan' => 'required',
+           'agama' => 'required',
+           'tgl_berperkara' => 'required',
+           'vonis' => 'required',
+        ]);
+
         $new = WBP::create($request->except(['_token']));
+        $new->kode_wbp = 'WBP'.rand(000,999);
+        $new->save();
+
+        if($request->file('foto') != null){
+            $filename = $request->file('foto')->store('/public/avatars');
+
+            $new->foto = $filename;
+            $new->save();
+        }
+
 
         return redirect()->route('wbp.index')->with('status', 'Berhasil Mendaftar WBP!');
     }
@@ -60,7 +81,8 @@ class WBPController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = WBP::find($id);
+        return view('admin.pages.wbp.edit', compact('data'));
     }
 
     /**
@@ -72,7 +94,18 @@ class WBPController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'nama' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'perkara' => 'required',
+            'jenis_kejahatan' => 'required',
+            'agama' => 'required',
+            'tgl_berperkara' => 'required',
+            'vonis' => 'required',
+        ]);
+
+        $new = WBP::create($request->except(['_token']));
     }
 
     /**

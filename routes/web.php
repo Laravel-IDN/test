@@ -43,6 +43,9 @@ Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
     Route::get('wbp', 'WBPController@index')->name('wbp.index');
     Route::get('wbp/create', 'WBPController@create')->name('wbp.create');
     Route::post('wbp/create', 'WBPController@store');
+    Route::get('wbp/edit/{id}', 'WBPController@edit')->name('wbp.edit');
+    Route::post('wbp/edit/{id}', 'WBPController@update');
+
 
     // Petugas
     Route::get('petugas', 'PetugasController@index')->name('petugas.index');
@@ -71,5 +74,5 @@ Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function (){
     Route::get('kunjungan/wnp', 'KunjunganController@index_admin_blok')->name('kunjungan.admin.blok');
 
     // Laporan
-    Route::get('laporan', 'DashboardController@laporan')->name('dashboard.laporan');
+    Route::get('laporan', 'DashboardController@laporan')->name('laporan.f');
 });

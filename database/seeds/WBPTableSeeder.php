@@ -22,10 +22,11 @@ class WBPTableSeeder extends Seeder
                 'nama' => $faker->firstNameFemale.' '.$faker->firstNameFemale,
                 'tempat_lahir' => $faker->city,
                 'tanggal_lahir' => $faker->date('Y-m-d'),
-                'alamat' => $faker->address,
-                'perkara' => $faker->randomElement(['pencurian', 'pembunuhan', 'narkoba']),
-                'jenis_kejahatan' => $faker->randomElement(['pencurian', 'pembunuhan', 'narkoba']),
-                'vonis' => $faker->numberBetween(1, 5).' Tahun',
+                'agama' => $faker->randomElement(['Islam', 'Kristen', 'Katolik', 'Buddha']),
+                'perkara' => $faker->randomElement(['Pembunuhan', 'Pencurian', 'Pencurian', 'Korupsi']),
+                'jenis_kejahatan' => $faker->randomElement(['PidSus', 'PiDum']),
+                'vonis' => ''.$faker->numberBetween(1, 10).' Tahun',
+                'tgl_berperkara' => $faker->date('Y-m-d'),
                 'foto' => $faker->imageUrl(),
             ]);
         }
